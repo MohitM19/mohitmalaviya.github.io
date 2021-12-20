@@ -1,5 +1,4 @@
- <span style="background-color:dodgerblue">
-# Mohit Malaviya </span>
+# <span style="background-color:dodgerblue"> Mohit Malaviya </span>
 > ### Example Data Science Portfolio
 ***
 ### Project 1: Arduino Rc remote
