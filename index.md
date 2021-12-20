@@ -1,4 +1,4 @@
-# <span style="color:dodgerblue"> Mohit Malaviya </span>
+# <span style="color:dodgerblue;background-image:linear-gradient(120deg,#5073B8,#A067AB)"> Mohit Malaviya </span>
 > ### Creative Portfolio
 ***
 ### Project 1: Sample text
