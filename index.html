@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mohit Malaviya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="leftside">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="rightside">
+                <div class="brandname">
+                    <div>Mohit Malaviya</div>
+                </div>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/mohit-malaviya-b54503228"><img src="images/lindinlink.jpg" height="50px" width="50px"></a>
+                     <a href="https://github.com/MohitM19"><img src="images/Githublink.jpg" height="50px" width="50px"></a>
+                    <a href="https://www.instagram.com/photo__treks/"><img src="images/instalink.jpg"height="50px" width="50px"></a>
+                    <a href="https://twitter.com/Mohitt_M"><img src="images/twitterlink.png" height="50px" width="50px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style='background-image:url(images/portfolio1.jpg)'></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logo1.jpg" alt=" " >
+                        </div>
+                        <div class="subtitle">
+                            My education qualification:<br>
+                            Bsc. Life Sciences (2018-21) (Delhi University)<br>
+                            Bsc. Programming and Data Science(2021-present)(IIT Madras)
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style='background-image:url(images/portfolio2.jpg)'></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logo2.jpg" alt=" " >
+                        </div>
+                        <div class="subtitle">
+                            My professional skillset includes:<br>
+                            Python,Statistics,Biology,<br>
+                            Chemistry,Mathematics,Adobe Photoshop,<br>
+                            Autodesk Sketchbook Pro,Html,Css,Javascript<br>
+                            My interpersonal skillset includes:<br>
+                            Teamwork,Collaboration,creative problem solving and much more
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style='background-image:url(images/portfolio3.jpg)'></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logo3.jpg"alt=" " >
+                        </div>
+                        <div class="subtitle">
+                            work experience:<br>
+                            Subject Matter Expert(Biology) at Chegg.inc(India) (5months-present) 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style='background-image:url(images/portfolio4.jpg)'></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logo4.jpg" alt=" " >
+                        </div>
+                        <div class="subtitle">
+                            My Hobbies include a wide range of activities:<br>
+                            Paper craft, electronics,pencil sketching and illustration,<br>
+                            Digital art,template design for 3d Crafting,chess and much more
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+
+
+    </div>
+</body>
+<!-- we run js after body so that the entire page can load before it runs -->
+<script>
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioitems.forEach(item=>{
+        item.addEventListener('mouseover',()=>{
+            console.log(item.childNodes[1].classList);
+            item.childNodes[1].classList.add('img-darken');
+        })
+
+        item.addEventListener('mouseout',()=>{
+            item.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
